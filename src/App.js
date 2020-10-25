@@ -8,8 +8,11 @@ function App() {
   return (
     <main >
      <Animations/>
-     <div className="normal-image-container" style={{width: "100%", marginTop: "200vh"}}>
+     <div style={{width: "100%", marginTop: "200vh"}}>
      <Opacity/>
+     </div>
+     <div style={{width: "100%", marginTop: "100vh", color: "black", textAlign: "center"}}>
+<h1>ANIMATIONS ARE COMPLETED</h1>
      </div>
     </main>
   );

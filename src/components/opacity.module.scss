@@ -1,29 +1,102 @@
-.container img {
-  width: 300px;
+.backgroundContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: #f9f9f9;
 }
 
-.container {
-  position: relative;
+.backgroundContainer span {
+  position: sticky;
+  top: 0;
   height: 100vh;
-  width: 100%;
   background: #f9f9f9;
+}
+
+.backgroundContainer span:nth-child(1) {
+  margin-top: calc(100vh * 0);
+  width: 80%;
+}
+
+.backgroundContainer span:nth-child(2) {
+  margin-top: calc(100vh * 1);
+
+  width: 0%;
+}
+
+.backgroundContainer span:nth-child(3) {
+  margin-top: calc(100vh * 2);
+
+  width: 0%;
+}
+
+.backgroundContainer span:nth-child(4) {
+  margin-top: calc(100vh * 3);
+
+  width: 0%;
+}
+
+.backgroundContainer span:nth-child(5) {
+  margin-top: calc(100vh * 4);
+  width: 0%;
+}
+
+.phoneContainer {
+  position: absolute;
+  bottom: 50%;
+  left: 12%;
+  width: 100%;
+  max-width: 100vw;
   text-align: center;
 }
 
-.container h1 {
-  padding-top: 100px;
-}
-
-.container div {
+.phoneContainer div {
   position: absolute;
-  bottom: 0;
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: center;
 }
 
+.phoneContainer img {
+  width: 300px;
+  height: auto;
+}
+
 @media (min-width: 768px) {
-  .container img {
+  .phoneContainer {
+    bottom: 440px;
+  }
+
+  .phoneContainer img {
     width: 500px;
+    height: auto;
+  }
+
+  .backgroundContainer span:nth-child(1) {
+    margin-top: calc(100vh * 0);
+    width: 80%;
+  }
+
+  .backgroundContainer span:nth-child(2) {
+    margin-top: calc(100vh * 1);
+
+    width: 5%;
+  }
+
+  .backgroundContainer span:nth-child(3) {
+    margin-top: calc(100vh * 2);
+
+    width: 5%;
+  }
+
+  .backgroundContainer span:nth-child(4) {
+    margin-top: calc(100vh * 3);
+
+    width: 5%;
+  }
+
+  .backgroundContainer span:nth-child(5) {
+    margin-top: calc(100vh * 4);
+    width: 5%;
   }
 }
